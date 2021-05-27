@@ -1,5 +1,0 @@
-@Component
-public class Student
-{
-    .....
-}
