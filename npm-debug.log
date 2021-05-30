@@ -1,0 +1,914 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@windmill/react-ui' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @windmill/react-ui
+8 silly fetchNamedPackageData @windmill/react-ui
+9 silly mapToRegistry name @windmill/react-ui
+10 silly mapToRegistry scope (from package name) @windmill
+11 verbose mapToRegistry no registry URL found in name for scope @windmill
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@windmill%2freact-ui
+15 verbose request uri https://registry.npmjs.org/@windmill%2freact-ui
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 11:31:17 AM
+18 verbose request id a7c1d20762786801
+19 http request GET https://registry.npmjs.org/@windmill%2freact-ui
+20 http 200 https://registry.npmjs.org/@windmill%2freact-ui
+21 verbose headers { date: 'Sat, 29 May 2021 04:31:20 GMT',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '656cfe0bbfed1944-SIN',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: 'W/"e2329d182b726823b981789e58fc53b6"',
+21 verbose headers   'last-modified': 'Mon, 17 May 2021 20:24:33 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   'cf-cache-status': 'EXPIRED',
+21 verbose headers   'cf-request-id': '0a57fd1b51000019448daaf000000001',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   server: 'cloudflare',
+21 verbose headers   'content-encoding': 'gzip' }
+22 silly get cb [ 200,
+22 silly get   { date: 'Sat, 29 May 2021 04:31:20 GMT',
+22 silly get     'content-type': 'application/json',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '656cfe0bbfed1944-SIN',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: 'W/"e2329d182b726823b981789e58fc53b6"',
+22 silly get     'last-modified': 'Mon, 17 May 2021 20:24:33 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     'cf-cache-status': 'EXPIRED',
+22 silly get     'cf-request-id': '0a57fd1b51000019448daaf000000001',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     server: 'cloudflare',
+22 silly get     'content-encoding': 'gzip' } ]
+23 verbose get saving @windmill/react-ui to /home/Dragonize/.npm/registry.npmjs.org/_40windmill_252freact-ui/.cache.json
+24 verbose makeDirectory /home/Dragonize/.npm creation not in flight; initializing
+25 silly makeDirectory /home/Dragonize/.npm uid: 1000 gid: 1000
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule @windmill/react-ui@0.6.0 checking installable status
+39 silly cache add args [ '@windmill/react-ui', null ]
+40 verbose cache add spec @windmill/react-ui
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: '@windmill/react-ui',
+41 silly cache add   scope: '@windmill',
+41 silly cache add   name: '@windmill/react-ui',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed @windmill/react-ui@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for @windmill/react-ui
+44 info addNameTag [ '@windmill/react-ui', 'latest' ]
+45 silly mapToRegistry name @windmill/react-ui
+46 silly mapToRegistry scope (from package name) @windmill
+47 verbose mapToRegistry no registry URL found in name for scope @windmill
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/@windmill%2freact-ui
+51 verbose addNameTag registry:https://registry.npmjs.org/@windmill%2freact-ui not in flight; fetching
+52 verbose get https://registry.npmjs.org/@windmill%2freact-ui not expired, no request
+53 silly addNameTag next cb for @windmill/react-ui with tag latest
+54 silly addNamed @windmill/react-ui@0.6.0
+55 verbose addNamed "0.6.0" is a plain semver version for @windmill/react-ui
+56 silly mapToRegistry name @windmill/react-ui
+57 silly mapToRegistry scope (from package name) @windmill
+58 verbose mapToRegistry no registry URL found in name for scope @windmill
+59 silly mapToRegistry using default registry
+60 silly mapToRegistry registry https://registry.npmjs.org/
+61 silly mapToRegistry uri https://registry.npmjs.org/@windmill%2freact-ui
+62 verbose addRemoteTarball https://registry.npmjs.org/@windmill/react-ui/-/react-ui-0.6.0.tgz not in flight; adding
+63 verbose addRemoteTarball [ 'https://registry.npmjs.org/@windmill/react-ui/-/react-ui-0.6.0.tgz',
+63 verbose addRemoteTarball   '259ee5d8b08088d4b0258fdc7595760dda6b09fe' ]
+64 info retry fetch attempt 1 at 11:31:20 AM
+65 info attempt registry request try #1 at 11:31:20 AM
+66 http fetch GET https://registry.npmjs.org/@windmill/react-ui/-/react-ui-0.6.0.tgz
+67 http fetch 200 https://registry.npmjs.org/@windmill/react-ui/-/react-ui-0.6.0.tgz
+68 silly fetchAndShaCheck shasum 259ee5d8b08088d4b0258fdc7595760dda6b09fe
+69 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/_40windmill/react-ui/-/react-ui-0.6.0.tgz not in flight; adding
+70 verbose addTmpTarball already have metadata; skipping unpack for @windmill/react-ui@0.6.0
+71 silly cache afterAdd @windmill/react-ui@0.6.0
+72 verbose afterAdd /home/Dragonize/.npm/@windmill/react-ui/0.6.0/package/package.json not in flight; writing
+73 verbose afterAdd /home/Dragonize/.npm/@windmill/react-ui/0.6.0/package/package.json written
+74 silly fetchNamedPackageData @tailwindcss/forms
+75 silly mapToRegistry name @tailwindcss/forms
+76 silly mapToRegistry scope (from package name) @tailwindcss
+77 verbose mapToRegistry no registry URL found in name for scope @tailwindcss
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry uri https://registry.npmjs.org/@tailwindcss%2fforms
+81 silly fetchNamedPackageData classnames
+82 silly mapToRegistry name classnames
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry uri https://registry.npmjs.org/classnames
+86 silly fetchNamedPackageData deepmerge
+87 silly mapToRegistry name deepmerge
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/deepmerge
+91 silly fetchNamedPackageData postcss
+92 silly mapToRegistry name postcss
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/postcss
+96 silly fetchNamedPackageData react-focus-lock
+97 silly mapToRegistry name react-focus-lock
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/react-focus-lock
+101 silly fetchNamedPackageData react-transition-group
+102 silly mapToRegistry name react-transition-group
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/react-transition-group
+106 verbose request uri https://registry.npmjs.org/@tailwindcss%2fforms
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 11:31:21 AM
+109 http request GET https://registry.npmjs.org/@tailwindcss%2fforms
+110 verbose request uri https://registry.npmjs.org/classnames
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 11:31:21 AM
+113 http request GET https://registry.npmjs.org/classnames
+114 verbose request uri https://registry.npmjs.org/deepmerge
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 11:31:21 AM
+117 http request GET https://registry.npmjs.org/deepmerge
+118 verbose request uri https://registry.npmjs.org/postcss
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 11:31:21 AM
+121 http request GET https://registry.npmjs.org/postcss
+122 verbose request uri https://registry.npmjs.org/react-focus-lock
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 11:31:21 AM
+125 http request GET https://registry.npmjs.org/react-focus-lock
+126 verbose request uri https://registry.npmjs.org/react-transition-group
+127 verbose request no auth needed
+128 info attempt registry request try #1 at 11:31:21 AM
+129 http request GET https://registry.npmjs.org/react-transition-group
+130 http 200 https://registry.npmjs.org/react-transition-group
+131 verbose headers { date: 'Sat, 29 May 2021 04:31:21 GMT',
+131 verbose headers   'content-type': 'application/json',
+131 verbose headers   'transfer-encoding': 'chunked',
+131 verbose headers   connection: 'keep-alive',
+131 verbose headers   'cf-ray': '656cfe222deb01c0-SIN',
+131 verbose headers   age: '1043',
+131 verbose headers   'cache-control': 'public, max-age=300',
+131 verbose headers   etag: 'W/"80f24502d7351f2511e27fc8a6973e27"',
+131 verbose headers   'last-modified': 'Thu, 11 Feb 2021 00:46:33 GMT',
+131 verbose headers   vary: 'accept-encoding, accept',
+131 verbose headers   'cf-cache-status': 'HIT',
+131 verbose headers   'cf-request-id': '0a57fd2957000001c055b8c000000001',
+131 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+131 verbose headers   server: 'cloudflare',
+131 verbose headers   'content-encoding': 'gzip' }
+132 silly get cb [ 200,
+132 silly get   { date: 'Sat, 29 May 2021 04:31:21 GMT',
+132 silly get     'content-type': 'application/json',
+132 silly get     'transfer-encoding': 'chunked',
+132 silly get     connection: 'keep-alive',
+132 silly get     'cf-ray': '656cfe222deb01c0-SIN',
+132 silly get     age: '1043',
+132 silly get     'cache-control': 'public, max-age=300',
+132 silly get     etag: 'W/"80f24502d7351f2511e27fc8a6973e27"',
+132 silly get     'last-modified': 'Thu, 11 Feb 2021 00:46:33 GMT',
+132 silly get     vary: 'accept-encoding, accept',
+132 silly get     'cf-cache-status': 'HIT',
+132 silly get     'cf-request-id': '0a57fd2957000001c055b8c000000001',
+132 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+132 silly get     server: 'cloudflare',
+132 silly get     'content-encoding': 'gzip' } ]
+133 verbose get saving react-transition-group to /home/Dragonize/.npm/registry.npmjs.org/react-transition-group/.cache.json
+134 silly resolveWithNewModule react-transition-group@4.4.1 checking installable status
+135 silly cache add args [ 'react-transition-group@4.4.1', null ]
+136 verbose cache add spec react-transition-group@4.4.1
+137 silly cache add parsed spec Result {
+137 silly cache add   raw: 'react-transition-group@4.4.1',
+137 silly cache add   scope: null,
+137 silly cache add   name: 'react-transition-group',
+137 silly cache add   rawSpec: '4.4.1',
+137 silly cache add   spec: '4.4.1',
+137 silly cache add   type: 'version' }
+138 silly addNamed react-transition-group@4.4.1
+139 verbose addNamed "4.4.1" is a plain semver version for react-transition-group
+140 silly mapToRegistry name react-transition-group
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry uri https://registry.npmjs.org/react-transition-group
+144 verbose addNameVersion registry:https://registry.npmjs.org/react-transition-group not in flight; fetching
+145 verbose get https://registry.npmjs.org/react-transition-group not expired, no request
+146 silly mapToRegistry name react-transition-group
+147 silly mapToRegistry using default registry
+148 silly mapToRegistry registry https://registry.npmjs.org/
+149 silly mapToRegistry uri https://registry.npmjs.org/react-transition-group
+150 verbose addRemoteTarball https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz not in flight; adding
+151 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz',
+151 verbose addRemoteTarball   '63868f9325a38ea5ee9535d828327f85773345c9' ]
+152 info retry fetch attempt 1 at 11:31:22 AM
+153 info attempt registry request try #1 at 11:31:22 AM
+154 http fetch GET https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz
+155 http fetch 200 https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz
+156 silly fetchAndShaCheck shasum 63868f9325a38ea5ee9535d828327f85773345c9
+157 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz not in flight; adding
+158 verbose addTmpTarball already have metadata; skipping unpack for react-transition-group@4.4.1
+159 http 200 https://registry.npmjs.org/postcss
+160 verbose headers { date: 'Sat, 29 May 2021 04:31:21 GMT',
+160 verbose headers   'content-type': 'application/json',
+160 verbose headers   'transfer-encoding': 'chunked',
+160 verbose headers   connection: 'keep-alive',
+160 verbose headers   'cf-ray': '656cfe222fed1a90-SIN',
+160 verbose headers   age: '643',
+160 verbose headers   'cache-control': 'public, max-age=300',
+160 verbose headers   etag: 'W/"d8d7d3a9fc38ba72e6c4e9c529633af7"',
+160 verbose headers   'last-modified': 'Fri, 21 May 2021 03:42:00 GMT',
+160 verbose headers   vary: 'accept-encoding, accept',
+160 verbose headers   'cf-cache-status': 'HIT',
+160 verbose headers   'cf-request-id': '0a57fd295600001a90acbf2000000001',
+160 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+160 verbose headers   server: 'cloudflare',
+160 verbose headers   'content-encoding': 'gzip' }
+161 silly get cb [ 200,
+161 silly get   { date: 'Sat, 29 May 2021 04:31:21 GMT',
+161 silly get     'content-type': 'application/json',
+161 silly get     'transfer-encoding': 'chunked',
+161 silly get     connection: 'keep-alive',
+161 silly get     'cf-ray': '656cfe222fed1a90-SIN',
+161 silly get     age: '643',
+161 silly get     'cache-control': 'public, max-age=300',
+161 silly get     etag: 'W/"d8d7d3a9fc38ba72e6c4e9c529633af7"',
+161 silly get     'last-modified': 'Fri, 21 May 2021 03:42:00 GMT',
+161 silly get     vary: 'accept-encoding, accept',
+161 silly get     'cf-cache-status': 'HIT',
+161 silly get     'cf-request-id': '0a57fd295600001a90acbf2000000001',
+161 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+161 silly get     server: 'cloudflare',
+161 silly get     'content-encoding': 'gzip' } ]
+162 verbose get saving postcss to /home/Dragonize/.npm/registry.npmjs.org/postcss/.cache.json
+163 silly cache afterAdd react-transition-group@4.4.1
+164 verbose afterAdd /home/Dragonize/.npm/react-transition-group/4.4.1/package/package.json not in flight; writing
+165 verbose afterAdd /home/Dragonize/.npm/react-transition-group/4.4.1/package/package.json written
+166 silly resolveWithNewModule postcss@8.3.0 checking installable status
+167 silly cache add args [ 'postcss@^8.2.15', null ]
+168 verbose cache add spec postcss@^8.2.15
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'postcss@^8.2.15',
+169 silly cache add   scope: null,
+169 silly cache add   name: 'postcss',
+169 silly cache add   rawSpec: '^8.2.15',
+169 silly cache add   spec: '>=8.2.15 <9.0.0',
+169 silly cache add   type: 'range' }
+170 silly addNamed postcss@>=8.2.15 <9.0.0
+171 verbose addNamed ">=8.2.15 <9.0.0" is a valid semver range for postcss
+172 silly addNameRange { name: 'postcss', range: '>=8.2.15 <9.0.0', hasData: false }
+173 silly mapToRegistry name postcss
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/postcss
+177 verbose addNameRange registry:https://registry.npmjs.org/postcss not in flight; fetching
+178 verbose get https://registry.npmjs.org/postcss not expired, no request
+179 silly addNameRange number 2 { name: 'postcss', range: '>=8.2.15 <9.0.0', hasData: true }
+180 silly addNameRange versions [ 'postcss',
+180 silly addNameRange   [ '0.1.0',
+180 silly addNameRange     '0.2.0',
+180 silly addNameRange     '0.3.0',
+180 silly addNameRange     '0.3.1',
+180 silly addNameRange     '0.3.2',
+180 silly addNameRange     '0.3.3',
+180 silly addNameRange     '0.3.4',
+180 silly addNameRange     '0.3.5',
+180 silly addNameRange     '1.0.0',
+180 silly addNameRange     '2.0.0',
+180 silly addNameRange     '2.1.0',
+180 silly addNameRange     '2.1.1',
+180 silly addNameRange     '2.1.2',
+180 silly addNameRange     '2.2.0',
+180 silly addNameRange     '2.2.1',
+180 silly addNameRange     '2.2.2',
+180 silly addNameRange     '2.2.3',
+180 silly addNameRange     '2.2.4',
+180 silly addNameRange     '2.2.5',
+180 silly addNameRange     '2.2.6',
+180 silly addNameRange     '3.0.0',
+180 silly addNameRange     '3.0.1',
+180 silly addNameRange     '3.0.2',
+180 silly addNameRange     '3.0.3',
+180 silly addNameRange     '3.0.4',
+180 silly addNameRange     '3.0.5',
+180 silly addNameRange     '3.0.6',
+180 silly addNameRange     '3.0.7',
+180 silly addNameRange     '4.0.0',
+180 silly addNameRange     '4.0.1',
+180 silly addNameRange     '4.0.2',
+180 silly addNameRange     '4.0.3',
+180 silly addNameRange     '4.0.4',
+180 silly addNameRange     '4.0.5',
+180 silly addNameRange     '4.0.6',
+180 silly addNameRange     '4.1.0',
+180 silly addNameRange     '4.1.1',
+180 silly addNameRange     '4.1.2',
+180 silly addNameRange     '4.1.3',
+180 silly addNameRange     '4.1.4',
+180 silly addNameRange     '4.1.5',
+180 silly addNameRange     '4.1.6',
+180 silly addNameRange     '4.1.7',
+180 silly addNameRange     '4.1.8',
+180 silly addNameRange     '4.1.9',
+180 silly addNameRange     '4.1.10',
+180 silly addNameRange     '4.1.11',
+180 silly addNameRange     '4.1.12',
+180 silly addNameRange     '4.1.13',
+180 silly addNameRange     '4.1.14',
+180 silly addNameRange     '4.1.15',
+180 silly addNameRange     '4.1.16',
+180 silly addNameRange     '5.0.0',
+180 silly addNameRange     '5.0.1',
+180 silly addNameRange     '5.0.2',
+180 silly addNameRange     '5.0.3',
+180 silly addNameRange     '5.0.4',
+180 silly addNameRange     '5.0.5',
+180 silly addNameRange     '5.0.6',
+180 silly addNameRange     '5.0.7',
+180 silly addNameRange     '5.0.8',
+180 silly addNameRange     '5.0.9',
+180 silly addNameRange     '5.0.10',
+180 silly addNameRange     '5.0.11',
+180 silly addNameRange     '5.0.12',
+180 silly addNameRange     '5.0.13',
+180 silly addNameRange     '5.0.14',
+180 silly addNameRange     '5.0.15',
+180 silly addNameRange     '5.0.16',
+180 silly addNameRange     '5.0.17',
+180 silly addNameRange     '5.0.18',
+180 silly addNameRange     '5.0.19',
+180 silly addNameRange     '5.0.20',
+180 silly addNameRange     '5.0.21',
+180 silly addNameRange     '5.1.0',
+180 silly addNameRange     '5.1.1',
+180 silly addNameRange     '5.1.2',
+180 silly addNameRange     '5.2.0',
+180 silly addNameRange     '5.2.1',
+180 silly addNameRange     '5.2.2',
+180 silly addNameRange     '5.2.3',
+180 silly addNameRange     '5.2.4',
+180 silly addNameRange     '5.2.5',
+180 silly addNameRange     '5.2.6',
+180 silly addNameRange     '5.2.7',
+180 silly addNameRange     '5.2.8',
+180 silly addNameRange     '5.2.9',
+180 silly addNameRange     '5.2.10',
+180 silly addNameRange     '5.2.11',
+180 silly addNameRange     '5.2.12',
+180 silly addNameRange     '5.2.13',
+180 silly addNameRange     '5.2.14',
+180 silly addNameRange     '5.2.15',
+180 silly addNameRange     '5.2.16',
+180 silly addNameRange     '5.2.17',
+180 silly addNameRange     '6.0.0',
+180 silly addNameRange     '6.0.1',
+180 silly addNameRange     '6.0.2',
+180 silly addNameRange     '6.0.3',
+180 silly addNameRange     '6.0.4',
+180 silly addNameRange     ... 98 more items ] ]
+181 silly addNamed postcss@8.3.0
+182 verbose addNamed "8.3.0" is a plain semver version for postcss
+183 silly mapToRegistry name postcss
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry uri https://registry.npmjs.org/postcss
+187 verbose addRemoteTarball https://registry.npmjs.org/postcss/-/postcss-8.3.0.tgz not in flight; adding
+188 verbose addRemoteTarball [ 'https://registry.npmjs.org/postcss/-/postcss-8.3.0.tgz',
+188 verbose addRemoteTarball   'b1a713f6172ca427e3f05ef1303de8b65683325f' ]
+189 info retry fetch attempt 1 at 11:31:22 AM
+190 info attempt registry request try #1 at 11:31:22 AM
+191 http fetch GET https://registry.npmjs.org/postcss/-/postcss-8.3.0.tgz
+192 http 200 https://registry.npmjs.org/classnames
+193 verbose headers { date: 'Sat, 29 May 2021 04:31:22 GMT',
+193 verbose headers   'content-type': 'application/json',
+193 verbose headers   'transfer-encoding': 'chunked',
+193 verbose headers   connection: 'keep-alive',
+193 verbose headers   'cf-ray': '656cfe237adb1a76-SIN',
+193 verbose headers   age: '4885',
+193 verbose headers   'cache-control': 'public, max-age=300',
+193 verbose headers   etag: 'W/"e42de97227b1c5a75c072fea06a00472"',
+193 verbose headers   'last-modified': 'Fri, 02 Apr 2021 21:34:00 GMT',
+193 verbose headers   vary: 'accept-encoding, accept',
+193 verbose headers   'cf-cache-status': 'HIT',
+193 verbose headers   'cf-request-id': '0a57fd2a3000001a762e2b1000000001',
+193 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+193 verbose headers   server: 'cloudflare',
+193 verbose headers   'content-encoding': 'gzip' }
+194 silly get cb [ 200,
+194 silly get   { date: 'Sat, 29 May 2021 04:31:22 GMT',
+194 silly get     'content-type': 'application/json',
+194 silly get     'transfer-encoding': 'chunked',
+194 silly get     connection: 'keep-alive',
+194 silly get     'cf-ray': '656cfe237adb1a76-SIN',
+194 silly get     age: '4885',
+194 silly get     'cache-control': 'public, max-age=300',
+194 silly get     etag: 'W/"e42de97227b1c5a75c072fea06a00472"',
+194 silly get     'last-modified': 'Fri, 02 Apr 2021 21:34:00 GMT',
+194 silly get     vary: 'accept-encoding, accept',
+194 silly get     'cf-cache-status': 'HIT',
+194 silly get     'cf-request-id': '0a57fd2a3000001a762e2b1000000001',
+194 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+194 silly get     server: 'cloudflare',
+194 silly get     'content-encoding': 'gzip' } ]
+195 verbose get saving classnames to /home/Dragonize/.npm/registry.npmjs.org/classnames/.cache.json
+196 silly resolveWithNewModule classnames@2.2.6 checking installable status
+197 silly cache add args [ 'classnames@2.2.6', null ]
+198 verbose cache add spec classnames@2.2.6
+199 silly cache add parsed spec Result {
+199 silly cache add   raw: 'classnames@2.2.6',
+199 silly cache add   scope: null,
+199 silly cache add   name: 'classnames',
+199 silly cache add   rawSpec: '2.2.6',
+199 silly cache add   spec: '2.2.6',
+199 silly cache add   type: 'version' }
+200 silly addNamed classnames@2.2.6
+201 verbose addNamed "2.2.6" is a plain semver version for classnames
+202 silly mapToRegistry name classnames
+203 silly mapToRegistry using default registry
+204 silly mapToRegistry registry https://registry.npmjs.org/
+205 silly mapToRegistry uri https://registry.npmjs.org/classnames
+206 verbose addNameVersion registry:https://registry.npmjs.org/classnames not in flight; fetching
+207 verbose get https://registry.npmjs.org/classnames not expired, no request
+208 silly mapToRegistry name classnames
+209 silly mapToRegistry using default registry
+210 silly mapToRegistry registry https://registry.npmjs.org/
+211 silly mapToRegistry uri https://registry.npmjs.org/classnames
+212 verbose addRemoteTarball https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz not in flight; adding
+213 verbose addRemoteTarball [ 'https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz',
+213 verbose addRemoteTarball   '43935bffdd291f326dad0a205309b38d00f650ce' ]
+214 info retry fetch attempt 1 at 11:31:22 AM
+215 info attempt registry request try #1 at 11:31:22 AM
+216 http fetch GET https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz
+217 http 200 https://registry.npmjs.org/@tailwindcss%2fforms
+218 verbose headers { date: 'Sat, 29 May 2021 04:31:22 GMT',
+218 verbose headers   'content-type': 'application/json',
+218 verbose headers   'transfer-encoding': 'chunked',
+218 verbose headers   connection: 'keep-alive',
+218 verbose headers   'cf-ray': '656cfe21afe31944-SIN',
+218 verbose headers   age: '126',
+218 verbose headers   'cache-control': 'public, max-age=300',
+218 verbose headers   etag: 'W/"b01afb5717487775146c81b2b36846b1"',
+218 verbose headers   'last-modified': 'Fri, 26 Mar 2021 10:39:00 GMT',
+218 verbose headers   vary: 'accept-encoding, accept',
+218 verbose headers   'cf-cache-status': 'HIT',
+218 verbose headers   'cf-request-id': '0a57fd290a000019446f096000000001',
+218 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+218 verbose headers   server: 'cloudflare',
+218 verbose headers   'content-encoding': 'gzip' }
+219 silly get cb [ 200,
+219 silly get   { date: 'Sat, 29 May 2021 04:31:22 GMT',
+219 silly get     'content-type': 'application/json',
+219 silly get     'transfer-encoding': 'chunked',
+219 silly get     connection: 'keep-alive',
+219 silly get     'cf-ray': '656cfe21afe31944-SIN',
+219 silly get     age: '126',
+219 silly get     'cache-control': 'public, max-age=300',
+219 silly get     etag: 'W/"b01afb5717487775146c81b2b36846b1"',
+219 silly get     'last-modified': 'Fri, 26 Mar 2021 10:39:00 GMT',
+219 silly get     vary: 'accept-encoding, accept',
+219 silly get     'cf-cache-status': 'HIT',
+219 silly get     'cf-request-id': '0a57fd290a000019446f096000000001',
+219 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+219 silly get     server: 'cloudflare',
+219 silly get     'content-encoding': 'gzip' } ]
+220 verbose get saving @tailwindcss/forms to /home/Dragonize/.npm/registry.npmjs.org/_40tailwindcss_252fforms/.cache.json
+221 silly resolveWithNewModule @tailwindcss/forms@0.3.2 checking installable status
+222 silly cache add args [ '@tailwindcss/forms@^0.3.2', null ]
+223 verbose cache add spec @tailwindcss/forms@^0.3.2
+224 silly cache add parsed spec Result {
+224 silly cache add   raw: '@tailwindcss/forms@^0.3.2',
+224 silly cache add   scope: '@tailwindcss',
+224 silly cache add   name: '@tailwindcss/forms',
+224 silly cache add   rawSpec: '^0.3.2',
+224 silly cache add   spec: '>=0.3.2 <0.4.0',
+224 silly cache add   type: 'range' }
+225 silly addNamed @tailwindcss/forms@>=0.3.2 <0.4.0
+226 verbose addNamed ">=0.3.2 <0.4.0" is a valid semver range for @tailwindcss/forms
+227 silly addNameRange { name: '@tailwindcss/forms',
+227 silly addNameRange   range: '>=0.3.2 <0.4.0',
+227 silly addNameRange   hasData: false }
+228 silly mapToRegistry name @tailwindcss/forms
+229 silly mapToRegistry scope (from package name) @tailwindcss
+230 verbose mapToRegistry no registry URL found in name for scope @tailwindcss
+231 silly mapToRegistry using default registry
+232 silly mapToRegistry registry https://registry.npmjs.org/
+233 silly mapToRegistry uri https://registry.npmjs.org/@tailwindcss%2fforms
+234 verbose addNameRange registry:https://registry.npmjs.org/@tailwindcss%2fforms not in flight; fetching
+235 http fetch 200 https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz
+236 http fetch 200 https://registry.npmjs.org/postcss/-/postcss-8.3.0.tgz
+237 verbose get https://registry.npmjs.org/@tailwindcss%2fforms not expired, no request
+238 silly addNameRange number 2 { name: '@tailwindcss/forms',
+238 silly addNameRange   range: '>=0.3.2 <0.4.0',
+238 silly addNameRange   hasData: true }
+239 silly addNameRange versions [ '@tailwindcss/forms',
+239 silly addNameRange   [ '0.1.0',
+239 silly addNameRange     '0.1.1',
+239 silly addNameRange     '0.1.2',
+239 silly addNameRange     '0.1.3',
+239 silly addNameRange     '0.1.4',
+239 silly addNameRange     '0.2.0',
+239 silly addNameRange     '0.2.1',
+239 silly addNameRange     '0.2.0-8a8671b',
+239 silly addNameRange     '0.3.0',
+239 silly addNameRange     '0.3.1',
+239 silly addNameRange     '0.3.2' ] ]
+240 silly addNamed @tailwindcss/forms@0.3.2
+241 verbose addNamed "0.3.2" is a plain semver version for @tailwindcss/forms
+242 silly fetchAndShaCheck shasum 43935bffdd291f326dad0a205309b38d00f650ce
+243 silly mapToRegistry name @tailwindcss/forms
+244 silly mapToRegistry scope (from package name) @tailwindcss
+245 verbose mapToRegistry no registry URL found in name for scope @tailwindcss
+246 silly mapToRegistry using default registry
+247 silly mapToRegistry registry https://registry.npmjs.org/
+248 silly mapToRegistry uri https://registry.npmjs.org/@tailwindcss%2fforms
+249 verbose addRemoteTarball https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.2.tgz not in flight; adding
+250 verbose addRemoteTarball [ 'https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.2.tgz',
+250 verbose addRemoteTarball   'e28c4514a53e69f725416a5a2a6d0f221683f069' ]
+251 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/classnames/-/classnames-2.2.6.tgz not in flight; adding
+252 verbose addTmpTarball already have metadata; skipping unpack for classnames@2.2.6
+253 info retry fetch attempt 1 at 11:31:22 AM
+254 info attempt registry request try #1 at 11:31:22 AM
+255 http fetch GET https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.2.tgz
+256 silly cache afterAdd classnames@2.2.6
+257 verbose afterAdd /home/Dragonize/.npm/classnames/2.2.6/package/package.json not in flight; writing
+258 verbose afterAdd /home/Dragonize/.npm/classnames/2.2.6/package/package.json written
+259 silly fetchAndShaCheck shasum b1a713f6172ca427e3f05ef1303de8b65683325f
+260 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/postcss/-/postcss-8.3.0.tgz not in flight; adding
+261 verbose addTmpTarball already have metadata; skipping unpack for postcss@8.3.0
+262 http 200 https://registry.npmjs.org/deepmerge
+263 verbose headers { date: 'Sat, 29 May 2021 04:31:22 GMT',
+263 verbose headers   'content-type': 'application/json',
+263 verbose headers   'transfer-encoding': 'chunked',
+263 verbose headers   connection: 'keep-alive',
+263 verbose headers   'cf-ray': '656cfe240d2a55e3-SIN',
+263 verbose headers   age: '3405',
+263 verbose headers   'cache-control': 'public, max-age=300',
+263 verbose headers   etag: 'W/"e3fc8d1bcd886bdaf3ec259fa97f2af7"',
+263 verbose headers   'last-modified': 'Mon, 28 Oct 2019 16:19:35 GMT',
+263 verbose headers   vary: 'accept-encoding, accept',
+263 verbose headers   'cf-cache-status': 'HIT',
+263 verbose headers   'cf-request-id': '0a57fd2a86000055e39cbae000000001',
+263 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+263 verbose headers   server: 'cloudflare',
+263 verbose headers   'content-encoding': 'gzip' }
+264 silly get cb [ 200,
+264 silly get   { date: 'Sat, 29 May 2021 04:31:22 GMT',
+264 silly get     'content-type': 'application/json',
+264 silly get     'transfer-encoding': 'chunked',
+264 silly get     connection: 'keep-alive',
+264 silly get     'cf-ray': '656cfe240d2a55e3-SIN',
+264 silly get     age: '3405',
+264 silly get     'cache-control': 'public, max-age=300',
+264 silly get     etag: 'W/"e3fc8d1bcd886bdaf3ec259fa97f2af7"',
+264 silly get     'last-modified': 'Mon, 28 Oct 2019 16:19:35 GMT',
+264 silly get     vary: 'accept-encoding, accept',
+264 silly get     'cf-cache-status': 'HIT',
+264 silly get     'cf-request-id': '0a57fd2a86000055e39cbae000000001',
+264 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+264 silly get     server: 'cloudflare',
+264 silly get     'content-encoding': 'gzip' } ]
+265 verbose get saving deepmerge to /home/Dragonize/.npm/registry.npmjs.org/deepmerge/.cache.json
+266 silly resolveWithNewModule deepmerge@4.2.2 checking installable status
+267 silly cache add args [ 'deepmerge@4.2.2', null ]
+268 verbose cache add spec deepmerge@4.2.2
+269 silly cache add parsed spec Result {
+269 silly cache add   raw: 'deepmerge@4.2.2',
+269 silly cache add   scope: null,
+269 silly cache add   name: 'deepmerge',
+269 silly cache add   rawSpec: '4.2.2',
+269 silly cache add   spec: '4.2.2',
+269 silly cache add   type: 'version' }
+270 silly addNamed deepmerge@4.2.2
+271 verbose addNamed "4.2.2" is a plain semver version for deepmerge
+272 silly mapToRegistry name deepmerge
+273 silly mapToRegistry using default registry
+274 silly mapToRegistry registry https://registry.npmjs.org/
+275 silly mapToRegistry uri https://registry.npmjs.org/deepmerge
+276 verbose addNameVersion registry:https://registry.npmjs.org/deepmerge not in flight; fetching
+277 silly cache afterAdd postcss@8.3.0
+278 verbose afterAdd /home/Dragonize/.npm/postcss/8.3.0/package/package.json not in flight; writing
+279 verbose get https://registry.npmjs.org/deepmerge not expired, no request
+280 silly mapToRegistry name deepmerge
+281 silly mapToRegistry using default registry
+282 silly mapToRegistry registry https://registry.npmjs.org/
+283 silly mapToRegistry uri https://registry.npmjs.org/deepmerge
+284 verbose addRemoteTarball https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz not in flight; adding
+285 verbose addRemoteTarball [ 'https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz',
+285 verbose addRemoteTarball   '44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955' ]
+286 verbose afterAdd /home/Dragonize/.npm/postcss/8.3.0/package/package.json written
+287 info retry fetch attempt 1 at 11:31:22 AM
+288 info attempt registry request try #1 at 11:31:22 AM
+289 http fetch GET https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz
+290 http 200 https://registry.npmjs.org/react-focus-lock
+291 verbose headers { date: 'Sat, 29 May 2021 04:31:22 GMT',
+291 verbose headers   'content-type': 'application/json',
+291 verbose headers   'transfer-encoding': 'chunked',
+291 verbose headers   connection: 'keep-alive',
+291 verbose headers   'cf-ray': '656cfe23ffe5560d-SIN',
+291 verbose headers   age: '333',
+291 verbose headers   'cache-control': 'public, max-age=300',
+291 verbose headers   etag: 'W/"e0f63ac9d30d64dc7f7045ae04d94cfc"',
+291 verbose headers   'last-modified': 'Thu, 13 May 2021 09:39:30 GMT',
+291 verbose headers   vary: 'accept-encoding, accept',
+291 verbose headers   'cf-cache-status': 'HIT',
+291 verbose headers   'cf-request-id': '0a57fd2a7c0000560d28aef000000001',
+291 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+291 verbose headers   server: 'cloudflare',
+291 verbose headers   'content-encoding': 'gzip' }
+292 silly get cb [ 200,
+292 silly get   { date: 'Sat, 29 May 2021 04:31:22 GMT',
+292 silly get     'content-type': 'application/json',
+292 silly get     'transfer-encoding': 'chunked',
+292 silly get     connection: 'keep-alive',
+292 silly get     'cf-ray': '656cfe23ffe5560d-SIN',
+292 silly get     age: '333',
+292 silly get     'cache-control': 'public, max-age=300',
+292 silly get     etag: 'W/"e0f63ac9d30d64dc7f7045ae04d94cfc"',
+292 silly get     'last-modified': 'Thu, 13 May 2021 09:39:30 GMT',
+292 silly get     vary: 'accept-encoding, accept',
+292 silly get     'cf-cache-status': 'HIT',
+292 silly get     'cf-request-id': '0a57fd2a7c0000560d28aef000000001',
+292 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+292 silly get     server: 'cloudflare',
+292 silly get     'content-encoding': 'gzip' } ]
+293 verbose get saving react-focus-lock to /home/Dragonize/.npm/registry.npmjs.org/react-focus-lock/.cache.json
+294 silly resolveWithNewModule react-focus-lock@2.4.1 checking installable status
+295 silly cache add args [ 'react-focus-lock@2.4.1', null ]
+296 verbose cache add spec react-focus-lock@2.4.1
+297 silly cache add parsed spec Result {
+297 silly cache add   raw: 'react-focus-lock@2.4.1',
+297 silly cache add   scope: null,
+297 silly cache add   name: 'react-focus-lock',
+297 silly cache add   rawSpec: '2.4.1',
+297 silly cache add   spec: '2.4.1',
+297 silly cache add   type: 'version' }
+298 silly addNamed react-focus-lock@2.4.1
+299 verbose addNamed "2.4.1" is a plain semver version for react-focus-lock
+300 silly mapToRegistry name react-focus-lock
+301 silly mapToRegistry using default registry
+302 silly mapToRegistry registry https://registry.npmjs.org/
+303 silly mapToRegistry uri https://registry.npmjs.org/react-focus-lock
+304 verbose addNameVersion registry:https://registry.npmjs.org/react-focus-lock not in flight; fetching
+305 verbose get https://registry.npmjs.org/react-focus-lock not expired, no request
+306 silly mapToRegistry name react-focus-lock
+307 silly mapToRegistry using default registry
+308 silly mapToRegistry registry https://registry.npmjs.org/
+309 silly mapToRegistry uri https://registry.npmjs.org/react-focus-lock
+310 verbose addRemoteTarball https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.4.1.tgz not in flight; adding
+311 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.4.1.tgz',
+311 verbose addRemoteTarball   'e842cc93da736b5c5d331799012544295cbcee4f' ]
+312 info retry fetch attempt 1 at 11:31:22 AM
+313 info attempt registry request try #1 at 11:31:22 AM
+314 http fetch GET https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.4.1.tgz
+315 http fetch 200 https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.2.tgz
+316 silly fetchAndShaCheck shasum e28c4514a53e69f725416a5a2a6d0f221683f069
+317 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/_40tailwindcss/forms/-/forms-0.3.2.tgz not in flight; adding
+318 verbose addTmpTarball already have metadata; skipping unpack for @tailwindcss/forms@0.3.2
+319 silly cache afterAdd @tailwindcss/forms@0.3.2
+320 verbose afterAdd /home/Dragonize/.npm/@tailwindcss/forms/0.3.2/package/package.json not in flight; writing
+321 verbose afterAdd /home/Dragonize/.npm/@tailwindcss/forms/0.3.2/package/package.json written
+322 http fetch 200 https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz
+323 silly fetchAndShaCheck shasum 44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955
+324 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz not in flight; adding
+325 verbose addTmpTarball already have metadata; skipping unpack for deepmerge@4.2.2
+326 http fetch 200 https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.4.1.tgz
+327 silly fetchAndShaCheck shasum e842cc93da736b5c5d331799012544295cbcee4f
+328 silly cache afterAdd deepmerge@4.2.2
+329 verbose afterAdd /home/Dragonize/.npm/deepmerge/4.2.2/package/package.json not in flight; writing
+330 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.4.1.tgz not in flight; adding
+331 verbose addTmpTarball already have metadata; skipping unpack for react-focus-lock@2.4.1
+332 verbose afterAdd /home/Dragonize/.npm/deepmerge/4.2.2/package/package.json written
+333 silly cache afterAdd react-focus-lock@2.4.1
+334 verbose afterAdd /home/Dragonize/.npm/react-focus-lock/2.4.1/package/package.json not in flight; writing
+335 verbose afterAdd /home/Dragonize/.npm/react-focus-lock/2.4.1/package/package.json written
+336 silly fetchNamedPackageData mini-svg-data-uri
+337 silly mapToRegistry name mini-svg-data-uri
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry uri https://registry.npmjs.org/mini-svg-data-uri
+341 verbose request uri https://registry.npmjs.org/mini-svg-data-uri
+342 verbose request no auth needed
+343 info attempt registry request try #1 at 11:31:22 AM
+344 http request GET https://registry.npmjs.org/mini-svg-data-uri
+345 http 200 https://registry.npmjs.org/mini-svg-data-uri
+346 verbose headers { date: 'Sat, 29 May 2021 04:31:23 GMT',
+346 verbose headers   'content-type': 'application/json',
+346 verbose headers   'transfer-encoding': 'chunked',
+346 verbose headers   connection: 'keep-alive',
+346 verbose headers   'cf-ray': '656cfe258f5a1a90-SIN',
+346 verbose headers   'cache-control': 'public, max-age=300',
+346 verbose headers   etag: 'W/"f3038f1d8c1d02b2ee84fe790d3d0ad0"',
+346 verbose headers   'last-modified': 'Mon, 10 May 2021 20:48:59 GMT',
+346 verbose headers   vary: 'accept-encoding, accept',
+346 verbose headers   'cf-cache-status': 'REVALIDATED',
+346 verbose headers   'cf-request-id': '0a57fd2b7600001a90cab89000000001',
+346 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+346 verbose headers   server: 'cloudflare',
+346 verbose headers   'content-encoding': 'gzip' }
+347 silly get cb [ 200,
+347 silly get   { date: 'Sat, 29 May 2021 04:31:23 GMT',
+347 silly get     'content-type': 'application/json',
+347 silly get     'transfer-encoding': 'chunked',
+347 silly get     connection: 'keep-alive',
+347 silly get     'cf-ray': '656cfe258f5a1a90-SIN',
+347 silly get     'cache-control': 'public, max-age=300',
+347 silly get     etag: 'W/"f3038f1d8c1d02b2ee84fe790d3d0ad0"',
+347 silly get     'last-modified': 'Mon, 10 May 2021 20:48:59 GMT',
+347 silly get     vary: 'accept-encoding, accept',
+347 silly get     'cf-cache-status': 'REVALIDATED',
+347 silly get     'cf-request-id': '0a57fd2b7600001a90cab89000000001',
+347 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+347 silly get     server: 'cloudflare',
+347 silly get     'content-encoding': 'gzip' } ]
+348 verbose get saving mini-svg-data-uri to /home/Dragonize/.npm/registry.npmjs.org/mini-svg-data-uri/.cache.json
+349 silly resolveWithNewModule mini-svg-data-uri@1.3.3 checking installable status
+350 silly cache add args [ 'mini-svg-data-uri@^1.2.3', null ]
+351 verbose cache add spec mini-svg-data-uri@^1.2.3
+352 silly cache add parsed spec Result {
+352 silly cache add   raw: 'mini-svg-data-uri@^1.2.3',
+352 silly cache add   scope: null,
+352 silly cache add   name: 'mini-svg-data-uri',
+352 silly cache add   rawSpec: '^1.2.3',
+352 silly cache add   spec: '>=1.2.3 <2.0.0',
+352 silly cache add   type: 'range' }
+353 silly addNamed mini-svg-data-uri@>=1.2.3 <2.0.0
+354 verbose addNamed ">=1.2.3 <2.0.0" is a valid semver range for mini-svg-data-uri
+355 silly addNameRange { name: 'mini-svg-data-uri',
+355 silly addNameRange   range: '>=1.2.3 <2.0.0',
+355 silly addNameRange   hasData: false }
+356 silly mapToRegistry name mini-svg-data-uri
+357 silly mapToRegistry using default registry
+358 silly mapToRegistry registry https://registry.npmjs.org/
+359 silly mapToRegistry uri https://registry.npmjs.org/mini-svg-data-uri
+360 verbose addNameRange registry:https://registry.npmjs.org/mini-svg-data-uri not in flight; fetching
+361 verbose get https://registry.npmjs.org/mini-svg-data-uri not expired, no request
+362 silly addNameRange number 2 { name: 'mini-svg-data-uri',
+362 silly addNameRange   range: '>=1.2.3 <2.0.0',
+362 silly addNameRange   hasData: true }
+363 silly addNameRange versions [ 'mini-svg-data-uri',
+363 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.1.3', '1.2.3', '1.3.3' ] ]
+364 silly addNamed mini-svg-data-uri@1.3.3
+365 verbose addNamed "1.3.3" is a plain semver version for mini-svg-data-uri
+366 silly mapToRegistry name mini-svg-data-uri
+367 silly mapToRegistry using default registry
+368 silly mapToRegistry registry https://registry.npmjs.org/
+369 silly mapToRegistry uri https://registry.npmjs.org/mini-svg-data-uri
+370 verbose addRemoteTarball https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz not in flight; adding
+371 verbose addRemoteTarball [ 'https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz',
+371 verbose addRemoteTarball   '91d2c09f45e056e5e1043340b8b37ba7b50f4fac' ]
+372 info retry fetch attempt 1 at 11:31:23 AM
+373 info attempt registry request try #1 at 11:31:23 AM
+374 http fetch GET https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz
+375 http fetch 200 https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz
+376 silly fetchAndShaCheck shasum 91d2c09f45e056e5e1043340b8b37ba7b50f4fac
+377 verbose addTmpTarball /tmp/npm-9092-76ad2389/registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz not in flight; adding
+378 verbose addTmpTarball already have metadata; skipping unpack for mini-svg-data-uri@1.3.3
+379 silly cache afterAdd mini-svg-data-uri@1.3.3
+380 verbose afterAdd /home/Dragonize/.npm/mini-svg-data-uri/1.3.3/package/package.json not in flight; writing
+381 verbose afterAdd /home/Dragonize/.npm/mini-svg-data-uri/1.3.3/package/package.json written
+382 silly fetchNamedPackageData colorette
+383 silly mapToRegistry name colorette
+384 silly mapToRegistry using default registry
+385 silly mapToRegistry registry https://registry.npmjs.org/
+386 silly mapToRegistry uri https://registry.npmjs.org/colorette
+387 silly fetchNamedPackageData nanoid
+388 silly mapToRegistry name nanoid
+389 silly mapToRegistry using default registry
+390 silly mapToRegistry registry https://registry.npmjs.org/
+391 silly mapToRegistry uri https://registry.npmjs.org/nanoid
+392 silly fetchNamedPackageData source-map-js
+393 silly mapToRegistry name source-map-js
+394 silly mapToRegistry using default registry
+395 silly mapToRegistry registry https://registry.npmjs.org/
+396 silly mapToRegistry uri https://registry.npmjs.org/source-map-js
+397 verbose request uri https://registry.npmjs.org/colorette
+398 verbose request no auth needed
+399 info attempt registry request try #1 at 11:31:23 AM
+400 http request GET https://registry.npmjs.org/colorette
+401 verbose request uri https://registry.npmjs.org/nanoid
+402 verbose request no auth needed
+403 info attempt registry request try #1 at 11:31:23 AM
+404 http request GET https://registry.npmjs.org/nanoid
+405 verbose request uri https://registry.npmjs.org/source-map-js
+406 verbose request no auth needed
+407 info attempt registry request try #1 at 11:31:23 AM
+408 http request GET https://registry.npmjs.org/source-map-js
+409 http 200 https://registry.npmjs.org/colorette
+410 verbose headers { date: 'Sat, 29 May 2021 04:31:23 GMT',
+410 verbose headers   'content-type': 'application/json',
+410 verbose headers   'transfer-encoding': 'chunked',
+410 verbose headers   connection: 'keep-alive',
+410 verbose headers   'cf-ray': '656cfe2bbfd4560d-SIN',
+410 verbose headers   age: '7044',
+410 verbose headers   'cache-control': 'public, max-age=300',
+410 verbose headers   etag: 'W/"d20221ddc12b16eab88f23524eade178"',
+410 verbose headers   'last-modified': 'Thu, 25 Feb 2021 13:26:18 GMT',
+410 verbose headers   vary: 'accept-encoding, accept',
+410 verbose headers   'cf-cache-status': 'HIT',
+410 verbose headers   'cf-request-id': '0a57fd2f4f0000560d883d8000000001',
+410 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+410 verbose headers   server: 'cloudflare',
+410 verbose headers   'content-encoding': 'gzip' }
+411 silly get cb [ 200,
+411 silly get   { date: 'Sat, 29 May 2021 04:31:23 GMT',
+411 silly get     'content-type': 'application/json',
+411 silly get     'transfer-encoding': 'chunked',
+411 silly get     connection: 'keep-alive',
+411 silly get     'cf-ray': '656cfe2bbfd4560d-SIN',
+411 silly get     age: '7044',
+411 silly get     'cache-control': 'public, max-age=300',
+411 silly get     etag: 'W/"d20221ddc12b16eab88f23524eade178"',
+411 silly get     'last-modified': 'Thu, 25 Feb 2021 13:26:18 GMT',
+411 silly get     vary: 'accept-encoding, accept',
+411 silly get     'cf-cache-status': 'HIT',
+411 silly get     'cf-request-id': '0a57fd2f4f0000560d883d8000000001',
+411 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+411 silly get     server: 'cloudflare',
+411 silly get     'content-encoding': 'gzip' } ]
+412 verbose get saving colorette to /home/Dragonize/.npm/registry.npmjs.org/colorette/.cache.json
+413 http 200 https://registry.npmjs.org/source-map-js
+414 verbose headers { date: 'Sat, 29 May 2021 04:31:23 GMT',
+414 verbose headers   'content-type': 'application/json',
+414 verbose headers   'transfer-encoding': 'chunked',
+414 verbose headers   connection: 'keep-alive',
+414 verbose headers   'cf-ray': '656cfe2bb9e01944-SIN',
+414 verbose headers   age: '4478',
+414 verbose headers   'cache-control': 'public, max-age=300',
+414 verbose headers   etag: 'W/"7f40bf8b826c6549a46d250fab0d6ae4"',
+414 verbose headers   'last-modified': 'Sun, 07 Feb 2021 21:53:53 GMT',
+414 verbose headers   vary: 'accept-encoding, accept',
+414 verbose headers   'cf-cache-status': 'HIT',
+414 verbose headers   'cf-request-id': '0a57fd2f510000194468b84000000001',
+414 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+414 verbose headers   server: 'cloudflare',
+414 verbose headers   'content-encoding': 'gzip' }
+415 silly get cb [ 200,
+415 silly get   { date: 'Sat, 29 May 2021 04:31:23 GMT',
+415 silly get     'content-type': 'application/json',
+415 silly get     'transfer-encoding': 'chunked',
+415 silly get     connection: 'keep-alive',
+415 silly get     'cf-ray': '656cfe2bb9e01944-SIN',
+415 silly get     age: '4478',
+415 silly get     'cache-control': 'public, max-age=300',
+415 silly get     etag: 'W/"7f40bf8b826c6549a46d250fab0d6ae4"',
+415 silly get     'last-modified': 'Sun, 07 Feb 2021 21:53:53 GMT',
+415 silly get     vary: 'accept-encoding, accept',
+415 silly get     'cf-cache-status': 'HIT',
+415 silly get     'cf-request-id': '0a57fd2f510000194468b84000000001',
+415 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+415 silly get     server: 'cloudflare',
+415 silly get     'content-encoding': 'gzip' } ]
+416 verbose get saving source-map-js to /home/Dragonize/.npm/registry.npmjs.org/source-map-js/.cache.json
+417 verbose stack Error: Missing required argument #1
+417 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+417 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+417 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+417 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+417 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+417 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+417 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+417 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+417 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+417 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+418 verbose cwd /home/Dragonize/Documents/Magang/praxis-academy
+419 error Linux 5.4.0-73-generic
+420 error argv "/usr/bin/node" "/usr/bin/npm" "install" "@windmill/react-ui"
+421 error node v8.10.0
+422 error npm  v3.5.2
+423 error code EMISSINGARG
+424 error typeerror Error: Missing required argument #1
+424 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+424 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+424 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+424 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+424 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+424 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+424 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+424 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+424 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+424 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+425 error typeerror This is an error with npm itself. Please report this error at:
+425 error typeerror     <http://github.com/npm/npm/issues>
+426 verbose exit [ 1, true ]
