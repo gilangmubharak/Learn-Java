@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/02-05.iml" filepath="$PROJECT_DIR$/.idea/02-05.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Coba/Coba.iml" filepath="$PROJECT_DIR$/Coba/Coba.iml" />
-    </modules>
-  </component>
-</project>
