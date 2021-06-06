@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-22T08:56:46" hostname="Legion" time="0.024">
-  <properties/>
-  <testcase name="appHasAGreeting()" classname="AppTest" time="0.024"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
