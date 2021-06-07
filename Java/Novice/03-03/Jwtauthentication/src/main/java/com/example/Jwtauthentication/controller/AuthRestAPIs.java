@@ -52,7 +52,7 @@ public class AuthRestAPIs {
         );
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        JwtBuilder jwt = jwtProvider.generateJwtToken(authentication);
+        String jwt = jwtProvider.generateJwtToken(authentication);
         return ResponseEntity.ok(new JwtResponse(jwt));
     }
 
@@ -76,23 +76,33 @@ public class AuthRestAPIs {
         Set roles = new HashSet<>();
 
         strRoles.forEach(role ->{
-            switch (role) {
-                case "admin":
-                    Role adminRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
-                            .orElseThrow(() ->  new RuntimeException("Fail -> Cause: User Role not find."));
-                    roles.add(adminRole);
-
-                    break;
-                case "pm":
-                    Role pmRole = roleRepository.findByName(RoleName.ROLE_PM)
+            if ("admin".equals(role)) {
+                Role adminRole = null;
+                try {
+                    adminRole = (Role) roleRepository.findByName(RoleName.ROLE_ADMIN)
+                            .orElseThrow(() -> new RuntimeException("Fail -> Cause: User Role not find."));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
+                roles.add(adminRole);
+            } else if ("pm".equals(role)) {
+                Role pmRole = null;
+                try {
+                    pmRole = (Role) roleRepository.findByName(RoleName.ROLE_PM)
                             .orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-                    roles.add(pmRole);
-
-                    break;
-                default:
-                    Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
+                roles.add(pmRole);
+            } else {
+                Role userRole = null;
+                try {
+                    userRole = (Role) roleRepository.findByName(RoleName.ROLE_USER)
                             .orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-                    roles.add(userRole);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
+                roles.add(userRole);
             }
         });
 

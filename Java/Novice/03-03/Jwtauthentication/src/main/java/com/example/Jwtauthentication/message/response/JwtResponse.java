@@ -3,12 +3,12 @@ package com.example.Jwtauthentication.message.response;
 import io.jsonwebtoken.JwtBuilder;
 
 public class JwtResponse {
-    private String token;
+    private JwtBuilder token;
     private String type = "Bearer";
-    private String accsessToken;
+    private JwtBuilder accsessToken;
     private String tokenType;
 
-    public JwtResponse(JwtBuilder accessToken) {
+    public JwtResponse(String accessToken) {
         this.token = accessToken;
     }
 

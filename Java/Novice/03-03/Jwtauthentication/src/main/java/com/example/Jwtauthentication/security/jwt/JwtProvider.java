@@ -20,28 +20,25 @@ public class JwtProvider {
     private String jwtExpiration;
     private Date expiration;
 
-    public JwtBuilder generateJwtToken(Authentication authentication) {
+    public String generateJwtToken(Authentication authentication) {
         UserPrinciple userPrinciple = (UserPrinciple) authentication.getPrincipal();
         RowSet userPrincipal = null;
         return Jwts.builder()
-                .setSubject((userPrincipal.getUsername()));
-                setIssuedAt(new Date());
-                setExpiration(new Date((new Date()).getTime() + jwtExpiration));
-                signWith(SignatureAlgorithm.HS512, jwtSecret);
-                compact();
+                .setSubject((userPrincipal.getUsername()))
+                .setIssuedAt(new Date())
+                .setExpiration(new Date((new Date()).getTime()+jwtExpiration))
+                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .compact();
     }
 
-    
+    private void setIssuedAt(Date date) {
+
+    }
 
     private void compact() {
     }
 
     private void signWith(SignatureAlgorithm hs512, String jwtSecret) {
-    }
-
-    private void setIssuedAt(Date date) {
-
-
     }
 
     public String getUserNameFromJwtToken(String Token) {
