@@ -9,7 +9,6 @@ import com.example.Jwtauthentication.model.User;
 import com.example.Jwtauthentication.repository.RoleRepository;
 import com.example.Jwtauthentication.repository.UserRepository;
 import com.example.Jwtauthentication.security.jwt.JwtProvider;
-import io.jsonwebtoken.JwtBuilder;
 import jdk.internal.dynalink.support.NameCodec;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +17,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,7 +40,12 @@ public class AuthRestAPIs {
 
     @Autowired
     JwtProvider jwtProvider;
-    private NameCodec encoder;
+
+    private final PasswordEncoder encoder;
+
+    public AuthRestAPIs(PasswordEncoder encoder) {
+        this.encoder = encoder;
+    }
 
     @PostMapping("/signin")
     public ResponseEntity<JwtResponse> authenticateUser(@Validated @RequestBody LoginForm loginRequest) {
@@ -58,12 +63,12 @@ public class AuthRestAPIs {
 
     @PostMapping("/signup")
     public ResponseEntity<String> registerUser(@Validated @RequestBody SignUpForm signUpRequest) {
-        if (userRepository.existingByUsername(signUpRequest.getUsername())) {
+        if (userRepository.existsByUsername(signUpRequest.getUsername())) {
             return new ResponseEntity<>("Fail -> Email is already in taken!",
                     HttpStatus.BAD_REQUEST);
         }
 
-        if(userRepository.existingByEmail(signUpRequest.getEmail())) {
+        if(userRepository.existsByEmail(signUpRequest.getEmail())) {
             return new ResponseEntity<>("Fail -> is already in use!",
                     HttpStatus.BAD_REQUEST);
         }

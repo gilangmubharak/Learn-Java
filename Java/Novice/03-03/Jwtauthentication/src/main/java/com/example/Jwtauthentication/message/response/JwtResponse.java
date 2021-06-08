@@ -3,9 +3,9 @@ package com.example.Jwtauthentication.message.response;
 import io.jsonwebtoken.JwtBuilder;
 
 public class JwtResponse {
-    private JwtBuilder token;
+    private String token;
     private String type = "Bearer";
-    private JwtBuilder accsessToken;
+    private String accsessToken;
     private String tokenType;
 
     public JwtResponse(String accessToken) {

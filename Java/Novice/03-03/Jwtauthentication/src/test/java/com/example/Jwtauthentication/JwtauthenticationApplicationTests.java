@@ -1,12 +1,13 @@
 package com.example.Jwtauthentication;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import org.jetbrains.annotations.TestOnly;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 class JwtauthenticationApplicationTests {
 
-	@Test
+	@TestOnly
 	void contextLoads() {
 	}
 
