@@ -14,15 +14,24 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-@CrossOrigin("http://loaclhost:8081")
+@CrossOrigin("http://localhost:8081")
 public class FileController {
 
     @Autowired
     FileStorageService storageService;
+
+    private static FileInfo apply(Path path) {
+        String filename = path.getFileName().toString();
+        UriComponentsBuilder url;
+        url = MvcUriComponentsBuilder
+                .fromMethodName(FileController.class, "getFile", path.getFileName().toString().toString());
+        return new FileInfo(filename, url);
+    }
 
     @PostMapping("/upload")
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file")MultipartFile file) {
@@ -39,12 +48,7 @@ public class FileController {
     }
 
     public ResponseEntity<List<FileInfo>> getListFiles() {
-        List<FileInfo> fileInfos = storageService.loadAll().map(path -> {
-            String filename = path.getFileName().toString();
-            UriComponentsBuilder url = MvcUriComponentsBuilder
-                    .fromMethodName(FileController.class, "getFile", path.getFileName().toString());
-                    return new FileInfo(filename, url);
-        }).collect(Collectors.toList());
+        List<FileInfo> fileInfos = storageService.loadAll().map(FileController::apply).collect(Collectors.toList());
             return ResponseEntity.status(HttpStatus.OK).body(fileInfos);
     }
 
