@@ -9,7 +9,6 @@ import com.example.Jwtauthentication.model.User;
 import com.example.Jwtauthentication.repository.RoleRepository;
 import com.example.Jwtauthentication.repository.UserRepository;
 import com.example.Jwtauthentication.security.jwt.JwtProvider;
-import jdk.internal.dynalink.support.NameCodec;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
